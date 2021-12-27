@@ -1,9 +1,9 @@
 import turtle
 import random
 
-w = 500
-h = 500
-food_size = 10
+w = 1440
+h = 900
+food_size = 20
 delay = 100 
 
 offsets = {
@@ -107,7 +107,7 @@ def go_left():
 screen = turtle.Screen()
 screen.setup(w, h)
 screen.title("Snake")
-screen.bgcolor("blue")
+screen.bgcolor("white")
 screen.setup(500, 500)
 screen.tracer(0)
 
@@ -117,8 +117,8 @@ pen.penup()
 
 
 food = turtle.Turtle()
-food.shape("square")
-food.color("yellow")
+food.shape("circle")
+food.color("green")
 food.shapesize(food_size / 20)
 food.penup()
 
